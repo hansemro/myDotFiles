@@ -394,6 +394,7 @@ format = <ramp> <label>
 format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
+format-warn-background = ${colors.back3}
 format-background = ${colors.back3}
 
 label-foreground = ${colors.foreground-alt}
