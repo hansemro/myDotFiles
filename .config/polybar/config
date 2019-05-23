@@ -61,9 +61,9 @@ font-2 = Iosevka Nerd Font:style=Medium:size=16;3
 
 ;==Module location=======================================
 
-modules-left = bspwm i3 left xwindow
+modules-left = bspwm i3index i3 left xwindow
 modules-center = 
-modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth right1 hour date
+modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
 
 tray-position = right
 tray-background = ${colors.back2}
@@ -170,6 +170,19 @@ format-unmounted-underline = #aa5555
 
 ;=======================================================
 
+[module/i3index]
+
+type = internal/i3
+format = <label-state>
+label-focused = "%index%"
+label-focused-background = ${colors.back1}
+label-focused-foreground = ${colors.foreground-alt}
+
+label-unfocused = 
+label-urgent = 
+
+;=======================================================
+
 [module/i3]
 
 type = internal/i3
@@ -233,6 +246,7 @@ format-foreground = ${colors.foreground-alt}
 ;======================================================
 
 [module/wlan]
+
 type = internal/network
 interface = wlp2s0
 interval = 3.0
@@ -299,6 +313,60 @@ format-disconnected =
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
+
+;======================================================
+
+[module/pulseaudioramp]
+
+type = internal/pulseaudio
+
+format-volume = <ramp-volume>
+label-muted = " "
+label-muted-foreground = ${colors.foreground-alt}
+label-muted-background = ${colors.back2}
+format-volume-suffix = " "
+format-volume-suffix-background = ${colors.back2}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
+ramp-volume-6 = 
+ramp-volume-foreground = ${colors.foreground-alt}
+ramp-volume-background = ${colors.back2}
+
+;======================================================
+
+[module/pulseaudio]
+
+type = internal/pulseaudio
+
+format-volume = <bar-volume>
+label-muted = " muted "
+label-muted-foreground = ${colors.foreground-alt}
+label-muted-background = ${colors.back2}
+format-volume-suffix = " "
+format-volume-suffix-background = ${colors.back2}
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-background = ${colors.back2}
+bar-volume-indicator = |
+bar-volume-indicator-foreground = ${colors.foreground-alt}
+bar-volume-indicator-background = ${colors.back2}
+bar-volume-fill = ─
+bar-volume-fill-background = ${colors.back2}
+bar-volume-empty = ─
+bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-empty-background = ${colors.back2}
 
 ;======================================================
 
