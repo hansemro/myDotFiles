@@ -35,6 +35,9 @@ exec --no-startup-id naturalscrolling d
 # Start compton
 exec --no-startup-id compton
 
+# Start nm-applet
+exec --no-startup-id nm-applet
+
 # Start nitrogen
 exec --no-startup-id nitrogen --restore
 
