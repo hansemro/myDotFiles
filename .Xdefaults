@@ -1,0 +1,47 @@
+##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
+##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
+##### PROCEED WITH CAUTION! #####
+
+! special colors
+*.foreground:  #d5c4a1
+*.background:  #1d2021
+*.cursorColor:  r Color
+! black
+*.color0:      #1d2021
+*.color8:      #665c54
+! red
+*.color1:      #fb4934
+*.color9:      #fb4934
+! green
+*.color2:      #b8bb26
+*.color10:     #b8bb26
+! yellow
+*.color3:      #fabd2f
+*.color11:     #fabd2f
+! blue
+*.color4:      #83a598
+*.color12:     #83a598
+! magenta
+*.color5:      #d3869b
+*.color13:     #d3869b
+! cyan
+*.color6:      #00ffff
+*.color14:     #8ec07c
+! white
+*.color7:      #d5c4a1
+*.color15:     #fbf1c7
+
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   false
+
+URxvt*transparent:       false
+
+URxvt*depth: 32
+URxvt.background: [84]#1d2021
+
+URxvt.font: xft:IBM Plex Mono:pixelsize=14
+URxvt.letterSpace: 0
+
+*antialias:  true
+*autohint:   false
+
