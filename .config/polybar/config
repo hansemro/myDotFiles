@@ -61,7 +61,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=16;3
 
 ;==Module location=======================================
 
-modules-left = bspwm i3index i3 left xwindow
+modules-left = bspwm i3index i3 left i3msg 
 modules-center = 
 modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
 
@@ -186,7 +186,7 @@ label-urgent =
 [module/i3]
 
 type = internal/i3
-format = <label-state> <label-mode>
+format = <label-state>
 index-sort = true
 wrapping-scroll = false
 
@@ -212,6 +212,16 @@ label-visible-foreground = #fafafa
 label-urgent = "  "
 label-urgent-background = ${colors.foreground}
 label-urgent-foreground = ${colors.alert}
+
+;======================================================
+
+[module/i3msg]
+
+type = internal/i3
+format = <label-mode>
+
+format-background = #00000000
+label-mode-foreground = ${colors.foreground-alt}
 
 ;======================================================
 
