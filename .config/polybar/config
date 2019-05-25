@@ -66,7 +66,7 @@ modules-center =
 modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
 
 tray-position = right
-tray-background = ${colors.back2}
+tray-background = ${colors.back1}
 tray-padding = 2
 
 cursor-click = pointer
@@ -354,7 +354,7 @@ ramp-volume-background = ${colors.back2}
 type = internal/pulseaudio
 
 format-volume = <bar-volume>
-label-muted = " muted "
+label-muted = " "
 label-muted-foreground = ${colors.foreground-alt}
 label-muted-background = ${colors.back2}
 format-volume-suffix = " "
