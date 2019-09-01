@@ -5,7 +5,7 @@
 ! special colors
 *.foreground:  #d5c4a1
 *.background:  #1d2021
-*.cursorColor:  r Color
+*.cursorColor: #d5c4a1 
 ! black
 *.color0:      #1d2021
 *.color8:      #665c54
