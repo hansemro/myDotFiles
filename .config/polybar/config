@@ -38,7 +38,7 @@ back4 = #5d5d5d
 
 [bar/example]
 
-; monitor = ${env:MONITOR:}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 24
 fixed-center = false
@@ -63,7 +63,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=16;3
 
 modules-left = bspwm i3index i3 left i3msg 
 modules-center = 
-modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
+modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth eth2 pulseaudioramp pulseaudio right1 hour date
 
 tray-position = right
 tray-background = ${colors.back1}
@@ -316,7 +316,29 @@ format-connected-prefix-foreground = ${colors.foreground-alt}
 format-connected-prefix-background = ${colors.back2}
 label-connected = " %local_ip%  "
 label-connected-background = ${colors.back2}
-label-connected-foreground = ${colors.foreground-alt}
+label-connected-foreground = ${colors.back3}
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+;======================================================
+
+[module/eth2]
+
+type = internal/network
+interface = enp5s0f3u4u4
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = "   "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-background = ${colors.back2}
+label-connected = " %local_ip%  "
+label-connected-background = ${colors.back2}
+label-connected-foreground = ${colors.back3}
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
