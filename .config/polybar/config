@@ -437,8 +437,8 @@ label = "%date%  "
 
 [module/battery]
 type = internal/battery
-battery = BAT1
-adapter = ADP1
+battery = BAT0
+adapter = AC0
 full-at = 98
 
 label-charging-foreground = ${colors.foreground-alt}
