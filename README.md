@@ -9,7 +9,7 @@
 * nerd-fonts-iosevka (AUR)
 ### Programs
 * i3-gaps (AUR)
-* compton-tryone (AUR)
+* compton-tryone-git (AUR)
 * betterlockscreen (AUR)
 * rofi
 * polybar (AUR)
