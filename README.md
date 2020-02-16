@@ -9,8 +9,7 @@
 * nerd-fonts-iosevka (AUR)
 ### Programs
 * i3-gaps (AUR)
-* compton-tryone-git (AUR)
+* picom-tryone-git (AUR)
 * betterlockscreen (AUR)
 * rofi
 * polybar (AUR)
-* network-manager-applet

@@ -63,7 +63,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=16;3
 
 modules-left = bspwm i3index i3 left i3msg 
 modules-center = 
-modules-right = right4 ssd right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
+modules-right = right4 root home right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
 
 tray-position = right
 tray-background = ${colors.back1}
@@ -121,23 +121,47 @@ format-foreground = ${colors.foreground-alt}
 
 ;========================================================
 
-[module/ssd]
+[module/root]
 
 type = internal/fs
 interval = 25
 
 mount-0 = /
-format-mounted-prefix = "   " 
+format-mounted-prefix = "  " 
 format-mounted-prefix-foreground = ${colors.foreground-alt}
 format-mounted-prefix-background = ${colors.back4}
-format-unmounted-prefix = ${self.format-mounted-prefix} 
-format-unmounted-prefix-foreground = ${self.format-mounted-prefix-foreground}
-format-unmounted-prefix-background = ${self.format-mounted-prefix-background}
+format-unmounted-prefix = " " 
+format-unmounted-prefix-foreground = ${colors.foreground-alt}
+format-unmounted-prefix-background = ${colors.back4}
 
-label-mounted = "%free%  "
+label-mounted = "%mountpoint%: %free%  "
 label-unmounted = "%mountpoint% not mounted  "
-label-unmounted-foreground = ${self.label-mounted-foreground}
-label-unmounted-background = ${self.label-mounted-background}
+label-unmounted-foreground = ${colors.foreground-alt}
+label-unmounted-background = ${colors.back4}
+label-mounted-background = ${colors.back4}
+label-mounted-foreground = ${colors.foreground-alt}
+
+format-background = ${colors.back4}
+
+;=======================================================
+
+[module/home]
+
+type = internal/fs
+interval = 25
+
+mount-0 = /home
+format-mounted-prefix = "  " 
+format-mounted-prefix-foreground = ${colors.foreground-alt}
+format-mounted-prefix-background = ${colors.back4}
+format-unmounted-prefix = " " 
+format-unmounted-prefix-foreground = ${colors.foreground-alt}
+format-unmounted-prefix-background = ${colors.back4}
+
+label-mounted = "%mountpoint%: %free%  "
+label-unmounted = "%mountpoint% not mounted  "
+label-unmounted-foreground = ${colors.foreground-alt}
+label-unmounted-background = ${colors.back4}
 label-mounted-background = ${colors.back4}
 label-mounted-foreground = ${colors.foreground-alt}
 
@@ -258,7 +282,7 @@ format-foreground = ${colors.foreground-alt}
 [module/wlan]
 
 type = internal/network
-interface = wlp2s0
+interface = wlp3s0
 interval = 3.0
 
 format-connected-prefix = "  "
@@ -287,7 +311,7 @@ label-connected = " %essid% "
 label-connected-foreground = ${colors.foreground-alt}
 
 ; Default: (none)
-label-disconnected = "○○○○  not connected "
+label-disconnected = "no wifi"
 label-disconnected-foreground = ${colors.foreground-alt}
 
 ; Default: (none)
@@ -307,7 +331,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 [module/eth]
 
 type = internal/network
-interface = enp5s0
+interface = enp0s25
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -415,8 +439,8 @@ label = "%date%  "
 
 [module/battery]
 type = internal/battery
-battery = BAT1
-adapter = ADP1
+battery = BAT0
+adapter = AC
 full-at = 98
 
 label-charging-foreground = ${colors.foreground-alt}

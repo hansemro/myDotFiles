@@ -1,5 +1,4 @@
-# i3 config file (v4)
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# sway config file (v4)
 
 set $mod Mod4
 
@@ -32,23 +31,16 @@ bindsym $mod+Return exec urxvt
 # Start policy kit agent
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# Start geoclue 2 agent
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-
-# Start redshift-gtk
-exec --no-startup-id redshift-gtk
-
 # start syncthing
 # exec --no-startup-id syncthing-gtk
 
 # start with backlight at 20%
-#exec --no-startup-id xbacklight -set 20
+# exec --no-startup-id xbacklight -set 20
 
 # naturalscrolling off
 # exec --no-startup-id naturalscrolling d
 
-# Start compton/picom
-exec --no-startup-id picom --experimental-backends
+# Start compton
 # exec --no-startup-id compton
 
 # Start nm-applet
@@ -58,7 +50,12 @@ exec --no-startup-id picom --experimental-backends
 exec --no-startup-id nitrogen --restore
 
 # Start polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+exec --no-startup-id xrdb ~/.Xresources
+
+# Start waybar
+exec_always --no-startup-id waybar
 
 # kill focused window
 bindsym $mod+Shift+q kill

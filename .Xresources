@@ -4,8 +4,8 @@
 
 ! special colors
 *.foreground:  #d5c4a1
-*.background:  #1d2021
-*.cursorColor: #d5c4a1 
+*.background:  #000000
+*.cursorColor:  #f871b4
 ! black
 *.color0:      #1d2021
 *.color8:      #665c54
@@ -36,12 +36,21 @@ URxvt*scrollBar_right:   false
 
 URxvt*transparent:       false
 
-URxvt*depth: 32
-URxvt.background: [84]#1d2021
-
-URxvt.font: xft:IBM Plex Mono:pixelsize=14
+URxvt.font: xft:Source Code Pro for Powerline:pixelsize=15
 URxvt.letterSpace: 0
 
 *antialias:  true
 *autohint:   false
 
+rofi.show-icons:            true
+rofi.modi:                  drun,run,window,ssh
+rofi.lines:                 10
+rofi.line-padding:          12
+rofi.matching:              fuzzy
+rofi.bw:                    0
+rofi.padding:               0
+rofi.separator-style:       none
+rofi.hide-scrollbar:        true
+rofi.line-margin:           0
+rofi.font:                  Hack 10
+rofi.theme:                 ~/.config/rofi/config.rasi
