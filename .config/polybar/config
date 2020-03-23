@@ -61,7 +61,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=16;3
 
 ;==Module location=======================================
 
-modules-left = bspwm i3index i3 left i3msg 
+modules-left = i3index i3 left i3msg 
 modules-center = 
 modules-right = right4 root home right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
 
@@ -331,16 +331,16 @@ ramp-signal-foreground = ${colors.foreground-alt}
 [module/eth]
 
 type = internal/network
-interface = enp0s25
+interface = eno0
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = "   "
+format-connected-prefix = "   "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 format-connected-prefix-background = ${colors.back2}
 label-connected = " %local_ip%  "
 label-connected-background = ${colors.back2}
-label-connected-foreground = ${colors.foreground-alt}
+label-connected-foreground = ${colors.back1}
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -364,7 +364,7 @@ format-volume-suffix-background = ${colors.back2}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-ramp-volume-3 = 
+ramp-volume-3 = 
 ramp-volume-4 = 
 ramp-volume-5 = 
 ramp-volume-6 = 
@@ -391,7 +391,8 @@ bar-volume-foreground-2 = #55aa55
 bar-volume-foreground-3 = #55aa55
 bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-6 = #f5a70a
+bar-volume-foreground-7 = #ff5555
 bar-volume-background = ${colors.back2}
 bar-volume-indicator = |
 bar-volume-indicator-foreground = ${colors.foreground-alt}
