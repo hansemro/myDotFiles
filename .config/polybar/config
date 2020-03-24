@@ -311,7 +311,7 @@ label-connected = " %essid% "
 label-connected-foreground = ${colors.foreground-alt}
 
 ; Default: (none)
-label-disconnected = "no wifi"
+label-disconnected = ""
 label-disconnected-foreground = ${colors.foreground-alt}
 
 ; Default: (none)
