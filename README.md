@@ -3,13 +3,14 @@
 
 ## Requirements
 ### Fonts
-* ttf-ibm-plex
-* ttf-roboto
-* ttf-material-design-icons (AUR)
-* nerd-fonts-iosevka (AUR)
+- ttf-ibm-plex
+- ttf-roboto
+- ttf-material-design-icons (AUR)
+- nerd-fonts-iosevka (AUR)
+- powerline-fonts-git (AUR)
 ### Programs
-* i3-gaps (AUR)
-* picom-tryone-git (AUR)
-* betterlockscreen (AUR)
-* rofi
-* polybar (AUR)
+- i3-gaps (AUR)
+- picom-tryone-git (AUR)
+- betterlockscreen (AUR)
+- rofi
+- polybar (AUR)
