@@ -14,3 +14,4 @@
 - betterlockscreen (AUR)
 - rofi
 - polybar (AUR)
+- urxvt-resize-font-git (AUR)
