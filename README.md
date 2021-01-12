@@ -1,5 +1,5 @@
 # myDotFiles
-![Alt text](https://github.com/hansemro/myDotFiles/blob/master/Screenshot.png?raw=true)
+![Alt text](./Screenshot.png?raw=true)
 
 ## Requirements
 ### Fonts
