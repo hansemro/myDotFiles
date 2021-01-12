@@ -61,7 +61,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=16;3
 
 ;==Module location=======================================
 
-modules-left = i3index i3 left i3msg 
+modules-left = i3 left i3msg 
 modules-center = 
 modules-right = right4 root home right3 memory cpu battery temperature right2 wlan eth pulseaudioramp pulseaudio right1 hour date
 
@@ -218,12 +218,12 @@ wrapping-scroll = false
 pin-workspaces = true
 
 ; focused = Active workspace on focused monitor
-label-focused = "  "
-label-focused-background = ${colors.foreground}
+label-focused = "  %index%  "
+label-focused-background = ${colors.back4}
 label-focused-foreground = #fafafa
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = "  "
+label-unfocused = "  %index%  "
 label-unfocused-background = ${colors.foreground}
 label-unfocused-foreground = #fafafa
 
